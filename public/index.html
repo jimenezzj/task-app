@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mis Tareas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./shared/modal/modal.css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logoWrapper">
+            <i class="material-icons">menu</i>
+            <h1>Mis Tareas</h1>
+        </div>
+    </header>
+
+    <body>
+        <div class="actionsWrapper">
+            <div class="selectContainer">
+                <div class="selecCover"></div>
+                <label for="orderTasks">Ordernar por</label>
+                <select name="orderTasks" id="orderTasks" class="selecOrder">
+                    <option value="" selected>Escoge una opción</option>
+                </select>
+                <ul class="customSelectList" id="customSelectList">
+                    <li class="customList--item">Título A-Z</li>
+                    <li class="customList--item">Título Z-A</li>
+                    <li class="customList--item">Prioridad Alta-Baja</li>
+                    <li class="customList--item">Prioridad Baja-Alta</li>
+                </ul>
+            </div>
+            <div class="searchContainer">
+                <i class="material-icons">search</i>
+                <input type="search" name="searchbar" class="searchBar" id="searchbar" placeholder="Buscar">
+            </div>
+            <div class="btnsContainer">
+                <button class="btn btnAdd">
+                    <i class="material-icons">add</i>
+                    Agregar
+                </button>
+            </div>
+        </div>
+        <div class="cardsWrapper">
+            <h2 class="subTitle">Tareas</h2>
+            <div class="cards">
+                <ul class="cardsList">
+                </ul>
+            </div>
+        </div>
+        <div class="cardsWrapper">
+            <button class="btnDisableSections" id="btnDisableCards">
+                <span>Inhabilitadas()</span>
+                <i class="material-icons">keyboard_arrow_down</i>
+            </button>
+            <div class="line"></div>
+            <div class="cardsD">
+                <ul class="cardsListD">
+                </ul>
+            </div>
+        </div>
+        <div class="fieldsWrapper">
+            <form action="" class="formWrapper">
+                <div class="fieldWrapper fieldWrapper--priority">
+                    <label for="dateDelivery">Fecha</label>
+                    <input type="date" name="dateDelivery" id="dateDelivery">
+                    <p class="error">Some error message</p>
+                </div>
+                <div class="fieldWrapper fieldWrapper--textFiedl">
+                    <label for="title">Titulo</label>
+                    <input type="text" name="title" id="title">
+                    <p class="error">Some error message</p>
+                </div>
+                <div class="fieldWrapper fieldWrapper--textFiedl">
+                    <label for="description">Descripción</label>
+                    <textarea type="text" name="description" id="description" rows="4"></textarea>
+                    <p class="error">Some error message</p>
+                </div>
+                <div class="groupFields">
+                    <div class="fieldWrapper fieldWrapper--customSelect">
+                        <label for="userAssigned">Encargado</label>
+                        <select name="userAssigned" id="userAssigned">
+                            <option value="" selected>Seleccione una marca</option>
+                        </select>
+                        <p class="error">Some error message</p>
+
+                    </div>
+                    <div class="fieldWrapper fieldWrapper--customSelect">
+                        <label for="priority">Prioridad</label>
+                        <select name="priority" id="priority">
+                            <option value="" selected>Seleccione una marca</option>
+                            <option value="A">Alta</option>
+                            <option value="M">Media</option>
+                            <option value="B">Baja</option>
+                        </select>
+                        <p class="error">Some error message</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+    <script src='./shared/modal/modal.js'></script>
+    <script src='main.js'></script>
+</body>
+
+</html>

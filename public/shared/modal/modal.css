@@ -1,0 +1,139 @@
+.modalWrapper {
+  /* display: flex; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.modalWrapper--open {
+  display: block;
+}
+
+.modalWrapper--close {
+  display: none;
+}
+
+.backDrop {
+  position: fixed;
+  background-color: #202124;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  opacity: 0.75;
+}
+
+.modalContent {
+  display: flex;
+  flex-flow: column;
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  border: 0.7px solid #e2e2e2;
+  /* width: 70%; */
+  /* height: 60%; */
+  box-shadow: #00000085 0px 0px 10px 9px;
+  z-index: 4;
+  background-color: #202124;
+  border-radius: 5px;
+  transform: translate(50%, -50%);
+}
+
+.modalHeader {
+  margin: 0;
+  padding: 1.2rem;
+  align-self: flex-start;
+  color: #e73e7c;
+  font-size: 2.3rem;
+}
+
+.modalHeader--start {
+  text-align: start;
+}
+
+.modalHeader--center {
+  text-align: center;
+}
+
+.modalHeader--end {
+  text-align: end;
+}
+
+.modalBody {
+  display: flex;
+  padding: 1rem;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+.modalBody--start {
+  justify-content: flex-start;
+}
+
+.modalBody--center {
+  justify-content: center;
+}
+
+.modalBody--end {
+  justify-content: flex-end;
+}
+
+.modalActionsContainer {
+  padding: 1.3rem 1rem;
+  align-self: flex-end;
+}
+
+.modalActions--start {
+  align-self: flex-start;
+}
+
+.modalActions--center {
+  align-self: center;
+}
+
+.modalActions--end {
+  align-self: flex-end;
+}
+
+.modalBtn,
+.btnSecondary {
+  padding: 0.7rem;
+  margin: 0 0.5rem;
+  background-color: #202124;
+  border: none;
+  color: #e73e7c;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.modalBtn:hover,
+.btnSecondary:hover {
+  background-color: #3f4046;
+  border-radius: 6px;
+}
+
+.btnPrimary {
+  padding: 0.7rem;
+  margin: 0 0.5rem;
+  background-color: #bb2b60;
+  border: none;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.btnPrimary:hover {
+  border-radius: 6px;
+  background-color: #e95a8e;
+}
